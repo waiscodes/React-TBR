@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import SignUp from "./components/Signup";
+import Header from "./components/Header";
 import LightDarkMode from "./reducers/rLightDarkMode";
 
 const myStore = createStore(
@@ -13,7 +13,7 @@ const myStore = createStore(
 
 ReactDOM.render(
   <Provider store={myStore}>
-    <SignUp />
+    <Header />
   </Provider>,
   document.getElementById("root")
 );
