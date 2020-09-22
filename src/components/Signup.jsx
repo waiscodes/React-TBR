@@ -3,6 +3,13 @@ import React from "react";
 const Signup = () => {
   const SumbitHandler = (e) => {
     e.preventDefault();
+
+    const usrName = document.querySelector("#name").value;
+    console.log(usrName);
+    const usrEmail = document.querySelector("#email").value;
+    console.log(usrEmail);
+    const usrPassword = document.querySelector("#password").value;
+    console.log(usrPassword);
   };
   return (
     <>
