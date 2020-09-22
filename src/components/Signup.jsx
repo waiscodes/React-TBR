@@ -21,7 +21,7 @@ const Signup = () => {
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Email" />
 
-        <label htmlFor="password"></label>
+        <label htmlFor="password">Password</label>
         <input
           type="password"
           name="password"
