@@ -1,9 +1,12 @@
 import React from "react";
 
 const Signup = () => {
+  const SumbitHandler = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <form>
+      <form onSubmit={SumbitHandler}>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Name" />
 
