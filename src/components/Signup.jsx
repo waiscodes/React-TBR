@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../css/Signup.css";
+import { UsrName, UsrEmail, UsrPassword } from "../actions/AUsrProfile";
 
-const Signup = () => {
+const Signup = (store) => {
   const SumbitHandler = (e) => {
     e.preventDefault();
 
@@ -12,6 +13,8 @@ const Signup = () => {
     console.log(usrEmail);
     const usrPassword = document.querySelector("#password").value;
     console.log(usrPassword);
+
+    store.dispatch(usrName, usrEmail, usrPassword);
   };
   return (
     <>
