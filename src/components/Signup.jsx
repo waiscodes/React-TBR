@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import "../css/Signup.css";
 
 const Signup = () => {
@@ -35,4 +36,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default connect((state) => ({ store: state }))(Signup);
