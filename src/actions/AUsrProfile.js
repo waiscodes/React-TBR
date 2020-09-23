@@ -18,3 +18,5 @@ const UsrPassword = (password) => {
     payload: password,
   };
 };
+
+export { UsrName, UsrEmail, UsrPassword };
