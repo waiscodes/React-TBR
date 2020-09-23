@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../css/Signup.css";
-import { UsrName, UsrEmail, UsrPassword } from "../actions/AUsrProfile";
+import { CreateProfile } from "../actions/AProfile";
 
 const Signup = (store) => {
   const SumbitHandler = (e) => {
@@ -14,7 +14,7 @@ const Signup = (store) => {
     const usrPassword = document.querySelector("#password").value;
     console.log(usrPassword);
 
-    store.dispatch(usrName, usrEmail, usrPassword);
+    store.dispatch(CreateProfile(usrName, usrEmail, usrPassword));
   };
   return (
     <>
