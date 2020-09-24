@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import Signup from "./components/Signup";
 import { RUsrProfile } from "./reducers/RUsrProfile";
 import HomePage from "./components/HomePage";
+import BookCard from "./components/BookCard";
 
 const rootReducer = combineReducers({
   user: RUsrProfile,
@@ -20,6 +21,7 @@ ReactDOM.render(
   <Provider store={myStore}>
     <Signup />
     <HomePage />
+    <BookCard />
   </Provider>,
   document.getElementById("root")
 );
