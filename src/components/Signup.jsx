@@ -7,12 +7,9 @@ const Signup = (store) => {
   const SumbitHandler = (e) => {
     e.preventDefault();
 
-    const usrName = document.querySelector("#name").value;
-    console.log(usrName);
-    const usrEmail = document.querySelector("#email").value;
-    console.log(usrEmail);
-    const usrPassword = document.querySelector("#password").value;
-    console.log(usrPassword);
+    const usrName = document.querySelector("#name").value,
+      usrEmail = document.querySelector("#email").value,
+      usrPassword = document.querySelector("#password").value;
 
     store.dispatch(CreateProfile(usrName, usrEmail, usrPassword));
   };
