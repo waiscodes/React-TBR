@@ -13,6 +13,11 @@ const HomePage = () => {
         <input type="search" name="searchbar" id="searchbar" />
       </form>
       <h2>This is the HomePage</h2>
+      <ul>
+        Feed UL
+        {/* This is a UL that the feed will go on. It will be updated via state, and
+        it'll most likely contain book recommendations, blogs, articles etc. */}
+      </ul>
     </>
   );
 };
