@@ -1,10 +1,16 @@
-const RUserProfile = (state = [], action) => {
+const RUsrProfile = (state = [], action) => {
   switch (action.type) {
-    case "SET_NAME":
-      return state;
+    case "CREATE_PROFILE":
+      const usrProfile = {
+        name: action.name,
+        email: action.email,
+        password: action.password,
+      };
+
+      return [...state, usrProfile];
     default:
       return state;
   }
 };
 
-export default RUserProfile;
+export { RUsrProfile };
