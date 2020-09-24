@@ -6,7 +6,10 @@ import { Provider } from "react-redux";
 import Signup from "./components/Signup";
 import { RUsrProfile } from "./reducers/RUsrProfile";
 
-const myStore = createStore(RUsrProfile);
+const myStore = createStore(
+  RUsrProfile,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <Provider store={myStore}>
