@@ -1,15 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
+
+import "./index.css";
+
 import Signup from "./components/Signup";
-import { RUsrProfile } from "./reducers/RUsrProfile";
 import HomePage from "./components/HomePage";
 import BookCard from "./components/BookCard";
 
+import { RUsrProfile } from "./reducers/RUsrProfile";
+import Books from "./reducers/RBooks";
+
 const rootReducer = combineReducers({
   user: RUsrProfile,
+  books: Books,
 });
 
 const myStore = createStore(
