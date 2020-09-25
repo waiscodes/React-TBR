@@ -13,4 +13,4 @@ const RUsrProfile = (state = [], action) => {
   }
 };
 
-export { RUsrProfile };
+export default RUsrProfile;

@@ -9,7 +9,7 @@ import Signup from "./components/Signup";
 import HomePage from "./components/HomePage";
 import BookCard from "./components/BookCard";
 
-import { RUsrProfile } from "./reducers/RUsrProfile";
+import RUsrProfile from "./reducers/RUsrProfile";
 import Books from "./reducers/RBooks";
 
 const rootReducer = combineReducers({
