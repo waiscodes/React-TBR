@@ -4,6 +4,12 @@ import { connect } from "react-redux";
 const AddNewBook = (props) => {
   const AddTBR = (e) => {
     e.preventDefault();
+
+    const title = document.querySelector("#title").value,
+      author = document.querySelector("#author").value,
+      genre = document.querySelector("#genre").value;
+
+    alert(genre);
   };
 
   return (
@@ -17,11 +23,11 @@ const AddNewBook = (props) => {
           placeholder="Enter the Title"
         />
 
-        <label htmlFor="Author">Author</label>
+        <label htmlFor="author">Author</label>
         <input
           type="text"
-          name="Author"
-          id="Author"
+          name="author"
+          id="author"
           placeholder="Enter the Author"
         />
 
