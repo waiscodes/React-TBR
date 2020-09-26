@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 const AddNewBook = (props) => {
   return (
@@ -31,4 +32,4 @@ const AddNewBook = (props) => {
   );
 };
 
-export default AddNewBook;
+export default connect()(AddNewBook);
