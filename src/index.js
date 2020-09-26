@@ -16,7 +16,7 @@ import { AddBooks } from "./actions/ABooks";
 
 const rootReducer = combineReducers({
   user: RUsrProfile,
-  books: Books,
+  library: Books,
 });
 
 const myStore = createStore(

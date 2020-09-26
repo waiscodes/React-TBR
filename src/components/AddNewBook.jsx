@@ -32,4 +32,6 @@ const AddNewBook = (props) => {
   );
 };
 
-export default connect()(AddNewBook);
+export default connect((state) => ({
+  library: state.library,
+}))(AddNewBook);
