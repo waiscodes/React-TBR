@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { AddBooks } from "../actions/AAddBooks";
 
 const AddNewBook = (props) => {
   const AddTBR = (e) => {
@@ -9,7 +10,7 @@ const AddNewBook = (props) => {
       author = document.querySelector("#author").value,
       genre = document.querySelector("#genre").value;
 
-    alert(genre);
+    props.library.dispatch(AddBooks(title, author, genre));
   };
 
   return (
