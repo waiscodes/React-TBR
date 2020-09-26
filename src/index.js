@@ -8,9 +8,11 @@ import "./index.css";
 import Signup from "./components/Signup";
 import HomePage from "./components/HomePage";
 import BookCard from "./components/BookCard";
+import AddNewBook from "./components/AddNewBook";
 
 import RUsrProfile from "./reducers/RUsrProfile";
 import Books from "./reducers/RBooks";
+import { AddBooks } from "./actions/ABooks";
 
 const rootReducer = combineReducers({
   user: RUsrProfile,
@@ -27,6 +29,7 @@ ReactDOM.render(
     <Signup />
     <HomePage />
     <BookCard />
+    <AddNewBook />
   </Provider>,
   document.getElementById("root")
 );
