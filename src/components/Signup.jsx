@@ -15,7 +15,7 @@ const Signup = (store) => {
   };
   return (
     <>
-      <section className="signup-form">
+      <section className="signup">
         <form onSubmit={SumbitHandler}>
           <label htmlFor="name" className="screen-reader-text">
             Name
