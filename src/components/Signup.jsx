@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../css/Signup.css";
 import { CreateProfile } from "../actions/AProfile";
+import "../css/Signup.css";
 
 const Signup = (store) => {
   const SumbitHandler = (e) => {
