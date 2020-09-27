@@ -17,13 +17,19 @@ const Signup = (store) => {
     <>
       <section className="signup-form">
         <form onSubmit={SumbitHandler}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="screen-reader-text">
+            Name
+          </label>
           <input type="text" name="name" id="name" placeholder="Name" />
 
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className="screen-reader-text">
+            Email
+          </label>
           <input type="email" name="email" id="email" placeholder="Email" />
 
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" className="screen-reader-text">
+            Password
+          </label>
           <input
             type="password"
             name="password"
