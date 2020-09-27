@@ -8,16 +8,25 @@ const HomePage = () => {
 
   return (
     <>
-      <form onSubmit={SearchEvent}>
-        <label htmlFor="searchbar">Search Bar</label>
-        <input type="search" name="searchbar" id="searchbar" />
-      </form>
-      <h2>This is the HomePage</h2>
-      <ul>
-        Feed UL
-        {/* This is a UL that the feed will go on. It will be updated via state, and
+      <section className="home">
+        <form onSubmit={SearchEvent}>
+          <label htmlFor="searchbar" className="screen-reader-text">
+            Search Bar
+          </label>
+          <input
+            type="search"
+            name="searchbar"
+            id="searchbar"
+            placeholder="Search"
+          />
+        </form>
+        <h2>This is the HomePage</h2>
+        <ul>
+          Feed UL
+          {/* This is a UL that the feed will go on. It will be updated via state, and
         it'll most likely contain book recommendations, blogs, articles etc. */}
-      </ul>
+        </ul>
+      </section>
     </>
   );
 };
