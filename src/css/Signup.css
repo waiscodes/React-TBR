@@ -1,9 +1,9 @@
-form {
+.signup-form {
   border: solid;
-  display: flex;
-  flex-direction: column;
 }
 
-form > * {
+.signup-form form > * {
   display: block;
+  margin: auto;
+  text-align: center;
 }

@@ -15,23 +15,25 @@ const Signup = (store) => {
   };
   return (
     <>
-      <form onSubmit={SumbitHandler}>
-        <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Name" />
+      <section className="signup-form">
+        <form onSubmit={SumbitHandler}>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" />
 
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" />
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
 
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="password"
-        />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
 
-        <input type="submit" value="Signup" />
-      </form>
+          <input type="submit" value="Signup" />
+        </form>
+      </section>
     </>
   );
 };
