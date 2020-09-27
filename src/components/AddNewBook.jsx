@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { AddBooks } from "../actions/AAddBooks";
+import "../css/AddNewBook.css";
 
 const AddNewBook = (props) => {
   const AddTBR = (e) => {
