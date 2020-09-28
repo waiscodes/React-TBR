@@ -15,7 +15,7 @@ const Profile = () => {
 
         <label htmlFor="email">Email</label>
         <p>Email</p>
-        <input type="password" name="password" id="password" />
+        <input type="email" name="email" id="email" />
 
         <label htmlFor="password">Password</label>
         <p>Password</p>
