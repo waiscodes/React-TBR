@@ -16,7 +16,7 @@ const Profile = () => {
         <p>Email</p>
         <input type="password" name="password" id="password" />
 
-        <label htmlFor="password">password</label>
+        <label htmlFor="password">Password</label>
         <p>Password</p>
         <input type="password" name="password" id="password" />
 
@@ -25,3 +25,5 @@ const Profile = () => {
     </>
   );
 };
+
+export default Profile;

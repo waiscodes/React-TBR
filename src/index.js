@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import HomePage from "./components/HomePage";
 import BookCard from "./components/BookCard";
 import AddNewBook from "./components/AddNewBook";
+import Profile from "./components/ProfilePage";
 
 import RUsrProfile from "./reducers/RUsrProfile";
 import Books from "./reducers/RBooks";
@@ -30,6 +31,7 @@ ReactDOM.render(
     <HomePage />
     <BookCard />
     <AddNewBook />
+    <Profile />
   </Provider>,
   document.getElementById("root")
 );
