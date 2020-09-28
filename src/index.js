@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 
-import "./index.css";
+import "./css/index.css";
 
 import Signup from "./components/Signup";
 import HomePage from "./components/HomePage";
@@ -13,7 +13,6 @@ import Profile from "./components/ProfilePage";
 
 import RUsrProfile from "./reducers/RUsrProfile";
 import Books from "./reducers/RBooks";
-import { AddBooks } from "./actions/AAddBooks";
 
 const rootReducer = combineReducers({
   user: RUsrProfile,
